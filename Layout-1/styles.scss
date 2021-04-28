@@ -1,0 +1,50 @@
+$color: #38b09d;
+$bgcolor: #212121;
+$fontlightcolor: #fff;
+$fontdarkcolor: #000;
+$columnCount: 9;
+
+body {
+  background-color: $bgcolor;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: repeat($columnCount, 100px);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, 100px);
+  padding: 100px;
+  justify-content: space-between;
+}
+
+.base-color {
+  background-color: $color;
+  color: $fontlightcolor;
+}
+
+span {
+  display: table-cell;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@for $i from 1 through 4 {
+  $percentage: $i * 25;
+  .darken-#{$i} {
+    background-color: mix(black, $color, $percentage);
+  }
+
+  .darken-#{$i} > .color-box-text {
+    color: $fontlightcolor;
+  }
+
+  .lighten-#{$i} {
+    background-color: mix(white, $color, $percentage);
+  }
+
+  .lighten-#{$i} > .color-box-text {
+    color: $fontdarkcolor;
+  }
+}
