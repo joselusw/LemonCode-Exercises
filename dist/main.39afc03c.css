@@ -1,0 +1,23 @@
+.boxes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.mini {
+  height: 75px;
+  line-height: 75px;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */

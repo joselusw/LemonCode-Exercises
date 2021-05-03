@@ -1,0 +1,48 @@
+//Colours
+$background: #212121;
+$base: #ef9a9a;
+$important: #f48fb1;
+$warning: #ce93d8;
+$shadow: #bdbdbd;
+$shadow-box: #f3e5f5;
+$border: #fff;
+$light-font: #fff;
+$dark-font: #000;
+
+//fonts
+$primary-font: "Helvetica";
+$secondary-font: "courier";
+
+body {
+    background-color: $background;
+}
+
+.box {
+    border: 1px solid $border;
+}
+
+.base {
+    background-color: $base;
+    color: $dark-font;
+}
+.important {
+    background-color: $important;
+    color: $dark-font;
+}
+.warning {
+    background-color: $warning;
+    color: $dark-font;
+}
+.shadow {
+    background-color: $shadow-box;
+    color: $dark-font;
+    box-shadow: 5px 5px $shadow;
+}
+.primary-font {
+    color: $light-font;
+    font-family: $primary-font;
+}
+.secondary-font {
+    color: $light-font;
+    font-family: $secondary-font;
+}

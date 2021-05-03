@@ -1,0 +1,23 @@
+$box-size: 150px;
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.box {
+    width: $box-size;
+    height: $box-size;
+    text-align: center;
+    line-height: $box-size;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.mini {
+    height: $box-size / 2;
+    line-height: $box-size / 2;
+}

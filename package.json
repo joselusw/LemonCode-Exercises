@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.13",
+    "sass": "^1.32.12"
+  }
+}
