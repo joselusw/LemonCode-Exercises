@@ -37,6 +37,7 @@ body {
     flex-direction: row;
     justify-content: inherit;
     background-color: #fafafa;
+    overflow: auto;
 }
 
 .list {
@@ -81,6 +82,10 @@ body {
     font-weight: bold;
   }
 
+  nav {
+    position: sticky;
+    top: 0;
+  }
 
 .menu-container {
     width: 100%;
