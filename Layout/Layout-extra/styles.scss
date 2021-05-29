@@ -1,5 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:100%;
 }
 
 .toolbar {
@@ -7,7 +8,7 @@ body {
     flex-direction: row;
     justify-content: inherit;
     background-color: #357a38;
-    width: 100vh;
+    width: 100%;
     height: 5vh;
     text-decoration: white;
 
@@ -29,7 +30,7 @@ body {
 }
 
 .page-container {
-    width: 100vh;
+    width: 100%;
     height: 95vh;
     display: flex;
     flex-direction: row;
@@ -42,3 +43,44 @@ body {
     height: 95vh;
     background-color: #6fbf73;
 }
+
+.list {
+    width: 100%;
+    font-family: tahoma;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:5px;
+    align-content: flex-start;
+}
+
+.card {
+    width: 20vh;
+    height: 16vh;
+    padding: 30px 0 30px;
+    margin: 5px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.avatar{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 25px;
+    z-index: 1;
+    position: relative;
+    border-radius: 50%;
+}
+
+.name {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
